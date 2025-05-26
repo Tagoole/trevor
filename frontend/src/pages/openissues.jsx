@@ -32,6 +32,8 @@ const OpenIssues = () => {
     const handleAssignIssue = async (issueId, lecturer) => {
         try {
             setAssigningIssue(issueId);
+            
+            // Use the existing issueAPI
             await issueAPI.assignIssue(issueId, lecturer.id);
             
             // Refresh issues after assignment
@@ -57,7 +59,7 @@ const OpenIssues = () => {
             
         } catch (error) {
             console.error('Error assigning issue:', error);
-            alert(`Failed to assign issue to ${lecturer.name}. Please try again.`);
+            alert(`Failed to assign issue to ${lecturer.name}. ${error.message || error}`);
         } finally {
             setAssigningIssue(null);
         }

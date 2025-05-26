@@ -562,7 +562,7 @@ class IssueView(generics.ListCreateAPIView, generics.RetrieveUpdateDestroyAPIVie
     
     
     # Assign Issue View (Only accessible by registrars)
-@api_view(['POST'])
+@api_view(['PUT'])
 @permission_classes([IsAuthenticated, IsRegistrar])  # Only registrars can assign issues
 def assign_issue(request, issue_id, lecturer_id):
     issue = get_object_or_404(Issue, id=issue_id)

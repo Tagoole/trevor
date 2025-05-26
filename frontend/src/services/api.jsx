@@ -643,7 +643,7 @@ export const issueAPI = {
   },
   assignIssue: async (issueId, lecturerId) => {
     try {
-      const response = await api.post(`/issues/${issueId}/assign/${lecturerId}/`);
+      const response = await api.put(`/issues/${issueId}/assign/${lecturerId}/`);
       return response.data;
     } catch (error) {
       throw error.response?.data || error.message;
