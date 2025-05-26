@@ -1,0 +1,162 @@
+
+.department-content {
+    display: flex;
+    padding: 0px;
+    min-height: 100vh;
+    width: 1700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.department-content h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 130px;
+    position: absolute;
+    margin-left: 240px;   
+}
+
+.management-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.department-form-section {
+    flex: 1;
+    width: 500px;
+    max-height: 400px;
+    padding: 39px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 500px;
+    margin-left: 240px;
+    margin-top: 104px;
+    background-color: white;
+    
+}
+
+.department-form-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+    margin-left: 2px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: rgb(38, 160, 10);
+    outline: none;
+    box-shadow: 0 0 5px rgb(38, 160, 10);
+}
+
+.uppercase-input {
+    text-transform: uppercase;
+}
+
+.department-submit-button {
+    background-color: rgb(22, 144, 22);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 322px;
+    transition: background-color 0.3 ease;
+}
+
+.department-submit-button:hover {
+    background-color: rgb(57, 193, 57);
+    color: white;
+}
+
+.list-section {
+    flex: 2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 500px;
+    height: 445px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 900px;
+}
+
+.list-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.management-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.management-table th,
+.management-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.management-table th {
+    font-weight: bold;
+}
+
+.department-delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+    right: -20px;
+    transition: background-color 0.3 ease;
+}
+
+.department-delete-button:hover {
+    color: white;
+}
+
+.n0-data {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}

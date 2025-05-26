@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+dj-rest-auth = "*"
+django-cors-headers = "*"
+django-otp = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "*"

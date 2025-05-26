@@ -1,0 +1,377 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14a707;
+    padding: 10px 20px;
+    color: black;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0;
+    grid-column: 1/-1;
+}
+
+.search-form {
+    /* padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0; */
+    padding: 0;
+    margin: auto;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.makerere-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.navbar-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-left: 20px;
+    align-items: center;
+    
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    margin-right: 0px;
+    margin-top: 15px;
+}
+
+.notification-icon {
+    width: 35px;
+    height: 35px;
+    margin-left:80px;
+    cursor: pointer;
+}
+
+.notification-icon:hover {
+    background-color: rgb(187, 189, 190);
+    border-radius: 8px;
+}
+
+.mail-icon {
+    width: 32px;
+    height: 32px;
+    margin-left:70px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.mail-icon:hover {
+    background-color: rgb(187, 189, 190);
+    border-radius: 5px;
+}
+
+.search-input {
+    padding: 10px 10px;
+    border: 1px solid green;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin: 5px 5px 5px 5px;
+    flex-grow: 1;
+    width: 350px;
+    
+}
+
+.search-input:hover {
+    border-color: green;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: -20px;
+    margin-left: 100px;
+}
+
+.user-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.user-initials {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin-right: -290px;
+    margin-left: 100px;
+}
+
+.user-greeting {
+    margin-right: 30px;
+    margin-left: 290px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.notifications-container {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -2px;
+    width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    height: 8px;
+    right: -2px;
+    color: white;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.search-results {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.search-results h3 {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.search-results li:last-child {
+    border-bottom: none;
+}
+
+.search-results li:hover {
+    background-color: #f9f9f9;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .search-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .navbar-logo-text {
+        font-size: 1rem;
+    }
+
+    .notification-icon,
+    .mail-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .user-icon,
+    .user-initials {
+        width: 30px;
+        height: 30px;
+    }
+
+    .user-greeting {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-logo-text {
+        font-size: 1rem;
+    }
+
+    .user-greeting {
+        font-size: 0.9rem;
+    }
+
+    .search-input {
+        width: 80%;
+    }
+
+    .notification-icon,
+    .mail-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .user-icon,
+    .user-initials {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .makerere-logo {
+        width: 40px;
+    }
+
+    .navbar-logo-text {
+        font-size: 0.9rem;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .notification-icon,
+    .mail-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .user-icon,
+    .user-initials {
+        width: 25px;
+        height: 25px;
+    }
+
+    .user-greeting {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .makerere-logo {
+        width: 35px;
+        height: auto;
+    }
+
+    .navbar-logo-text {
+        font-weight: 0.8rem
+    }
+
+    .search-input {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .notification-icon,
+    .mail-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .user-icon,
+    .user-initials {
+        width: 20px;
+        height: 20px;
+    }
+
+    .user-greeting {
+        font-size: 0.7rem;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .notification-container {
+        margin-top: 10px;
+    }
+}

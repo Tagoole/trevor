@@ -1,0 +1,252 @@
+.open-issues-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.open-issues-content {
+    display: flex;
+    flex: 1;
+}
+
+.open-issues-content h1 {
+    margin-top: 30px;
+    margin-left: 223px;
+    color: black;
+    position: absolute;
+}
+
+.issues-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    gap: 10px;
+    position: absolute;
+    margin-left: 199px;
+    margin-top: 100px;
+}
+
+.nav-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: black;
+    display: inline;
+    border-bottom: 1px solid black;
+    border: 1px solid black;
+}
+
+.nav-button.active {
+    background-color: white;
+    color: black;
+}
+
+.emptyboxcontainers {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.issue {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 80vh;
+    width: 76%;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 180px;
+}
+
+.issue p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.myissuescontainer {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-left: 10px;
+}
+
+
+.myissuesinput {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    margin-top: -50px;
+}
+
+.myissuesicon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 265px;
+    cursor: pointer;
+    margin-bottom: 130px;
+}
+
+.filter-issues {
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    right: -70px;
+    margin-top: 200px;
+    margin-right: 90px;
+}
+
+.issuefiltersicon {
+    width: 10px;
+    margin-bottom: 80px;
+    margin-right: 1000px;
+    position: relative;
+}
+
+.issue-more-icon {
+    flex: 0;
+    cursor: pointer;
+}
+
+.more-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.more-icon:hover {
+    opacity: 1;
+}
+
+.lecturer-dropdown-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 5px;
+    width: 150px;
+}
+
+.sub-dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 40px; /* Adjust based on the position of the first dropdown */
+    right: 0;
+    z-index: 20;
+    width: 150px;
+}
+
+.sub-dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sub-dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+.lecturer-dropdown-menu p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    padding-bottom: 1px solid black;
+}
+
+.lecturer-dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lecturer-dropdown-menu ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lecturer-dropdown-menu ul li:hover {
+    background-color: rgb(176, 176, 174);
+}
+
+.table {
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: absolute;
+    margin-left: 222px;
+    margin-top: 300px;
+    overflow: hidden;
+    width: 1100px;
+    background-color: rgb(186, 185, 184);
+}
+
+.header {
+    display: flex;
+    background-color: rgb(176, 176, 174);
+    padding: 10px;
+    border-bottom: 1px solid black;
+    gap: 320px;
+    font-weight: bold;
+}
+
+.emptybox {
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    position: relative;
+    width: 350px;
+}
+
+.body {
+    height: 55vh;
+}
+
+.emptyboxcontainers p {
+    font-size: 1.3rem;
+}
+
+.issue-table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.issue-item {
+    flex: 1;
+}

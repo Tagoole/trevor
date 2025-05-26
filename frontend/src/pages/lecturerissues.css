@@ -1,0 +1,114 @@
+.lecturer-issue-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.lecturer-issue-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 90px;
+    background-color: white;
+}
+
+.filter-search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-dropdown {
+    padding: 8px;
+    font-size: irem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.filter-dropdown:focus {
+    border-color: rgb(38, 160, 10);
+    outline: none;
+    box-shadow: 0 0 5px rgb(38, 160, 10);
+}
+
+.lecturer-search-container {
+    display: flex;
+    align-items: center;
+}
+
+.lecturer-search-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    display: inline-block;
+}
+
+.status-pending {
+    background-color: orange;
+    color: black;
+}
+
+.status-in-progress {
+    background-color: yellow;
+    color: black;
+}
+
+.status-resolved {
+    background-color: rgb(12, 159, 12);
+    color: white;
+}
+
+.lecturer-search-input:focus {
+    border-color: rgb(38, 160, 10);
+    outline: none;
+    box-shadow: 0 0 5px rgb(38, 160, 10);
+}
+
+.no-issues-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.no-issues-container p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.table-header-items {
+    flex: 1;
+    text-align: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.table-rows {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    gap: 0px;
+}
+.table-row-items {
+    flex: 1;
+    text-align: center;
+}
+
+.no-issues-icon {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.lecturer-search-icon {
+    margin-left: 190px;
+    position: absolute;
+    width: 20px;
+}

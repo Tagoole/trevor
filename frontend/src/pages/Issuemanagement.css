@@ -1,0 +1,151 @@
+.issue-management {
+    padding: 20px;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.issue-header {
+    margin-bottom: 30px;
+}
+
+.issue-header h1 {
+    color: #2B3674;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.issue-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #E0E5F2;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 300px;
+    position: relative;
+    width: 350px;
+}
+
+.search-bar input {
+    padding: 10px 10px;
+    border: 1px solid green;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-left: 80px;
+    flex-grow: 1;
+    width: 350px;
+}
+
+.new-issue-btn {
+    background:green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    float: right;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.new-issue-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.issues-table {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table-header {
+    background: #F4F7FE;
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr;
+    font-weight: 600;
+    color: #2B3674;
+}
+
+.table-row {
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #E0E5F2;
+    align-items: center;
+}
+
+.table-row:hover {
+    background-color: #F9FAFB; /* Equivalent to bg-gray-50 */
+    transition: all 0.2s ease;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 12px;
+    text-align: center;
+    width: fit-content;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid;
+    transition: all 0.2s ease;
+}
+
+.status-open {
+    background: #FEF3C7; /* Equivalent to bg-yellow-50 */
+    color: #B45309; /* Equivalent to text-yellow-700 */
+    border-color: #FDE68A; /* Equivalent to border-yellow-200 */
+}
+
+.status-in-progress {
+    background: #DBEAFE; /* Equivalent to bg-blue-50 */
+    color: #1D4ED8; /* Equivalent to text-blue-700 */
+    border-color: #BFDBFE; /* Equivalent to border-blue-200 */
+}
+
+.status-resolved {
+    background: #D1FAE5; /* Equivalent to bg-green-50 */
+    color: #047857; /* Equivalent to text-green-700 */
+    border-color: #A7F3D0; /* Equivalent to border-green-200 */
+}
+
+/* Custom scrollbar for the table */
+.table-container {
+    overflow: auto;
+    border: 1px solid #E5E7EB; /* Equivalent to border-gray-200 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-sm */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.table-container::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.table-container::-webkit-scrollbar-track {
+    background-color: #F3F4F6; /* Equivalent to bg-gray-100 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+}
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #D1D5DB; /* Equivalent to bg-gray-300 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+}

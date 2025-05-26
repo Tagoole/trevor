@@ -1,0 +1,305 @@
+.registrar-dashboard-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    width: 130%;
+}
+
+.registrar-dashboard-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 1250px;
+    color: black;
+}
+
+.registrar-card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -9px;
+    flex-direction: row;
+    margin-left: 160px;
+    flex: row;
+    max-width: 1200px;
+}
+ 
+
+.assigned-card {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    color: black;
+    background-color: white;
+}
+
+.assigned-card h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.assigned-card p {
+    color: black;
+    font-weight: bold;
+}
+
+.pending-card h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.pending-card p {
+    color: black;
+    font-weight: bold;
+}
+
+.in-progress-card h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.in-progress-card p {
+    color: white;
+    font-weight: bold;
+}
+
+.resolved-card h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.resolved-card p {
+    color: black;
+    font-weight: bold;
+}
+
+
+.pending-card {
+    color: black;
+    background-color: rgb(205, 133, 39);
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+    width: 260px;
+}
+
+.in-progress-card {
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    text-align: center;
+    color: rgb(253, 253, 253);
+    background-color: rgb(0, 0, 0);
+}
+
+.resolved-card {
+    color: black;
+    background-color: rgb(59, 181, 25);
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    border-radius: 10px;
+}
+
+.recent {
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 1210px;
+}
+
+.registrar-recent {
+    border: 1px solid black;    
+    border-radius: 10px;
+    height: 100vh;
+    width: 72%;
+    margin-left: 160px;
+}
+
+.assigned {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.open-issues-button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: rgb(28, 184, 28);
+    right: -40px;
+    animation: hologram 2s infinite ease-in-out;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+}
+
+.open-issues-button:hover {
+    color: rgb(11, 7, 7);
+    transform: scale(1.1);
+}
+
+.filter-issue {
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    right: -60px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.issuestable {
+    margin-top: 90px;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(186, 185, 184);
+}
+
+.tableheader {
+    display: flex;
+    background-color: rgb(176, 176, 174);
+    padding: 10px;
+    border-bottom: 1px solid black;
+    gap: 320px;
+    font-weight: bold;
+}
+
+.registrar-issues-container {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.emptyboxicon {
+    height: auto;
+}
+
+
+.registrar-issues-container p {
+    font-size: 1.5rem;
+}
+
+.myissuessearchcontainer {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.myissuessearchinput {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.myissuessearchicon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 550px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.myissuessearchicon:hover {
+    animation: pulse 1s infinite ease-in-out;
+}
+
+.myissuessearchicon.animate {
+    animation: rotate 2s linear infinite;
+}
+
+.myissuessearchinput:focus {
+    border-color: rgb(38, 160, 10);
+    outline: none;
+    box-shadow: 0 0 5px rgb(38, 160, 10);
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.issuefiltericon {
+    width: 10px;
+    margin-bottom: 80px;
+    margin-right: 1000px;
+    position: relative;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.assigned-card:hover,
+.pending-card:hover,
+.in-progress-card:hover,
+.resolved-card:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+
+@keyframes hologram {
+    0% {
+        background: linear-gradient(90deg, rgba(28, 184, 28, 0.8), rgba(255, 255, 255, 0.2));
+        background-size: 200% 200%;
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(28, 184, 28, 0.5);
+    }
+    50% {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(28, 184, 28, 0.8));
+        background-size: 200% 200%;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(28, 184, 28, 0.8);
+    }
+    100% {
+        background: linear-gradient(90deg, rgba(28, 184, 28, 0.8), rgba(255, 255, 255, 0.2));
+        background-size: 200% 200%;
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(28, 184, 28, 0.5);
+    }
+}

@@ -1,0 +1,27 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body.no-scroll {
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    
+}
+.main-content {
+    margin-left: 0px;
+    overflow-y: auto;
+    overflow: hidden;
+}
+
+.app-container {
+    display: flex;
+    margin-top: -100px;
+}

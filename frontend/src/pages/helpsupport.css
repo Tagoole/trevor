@@ -1,0 +1,155 @@
+.helpsupport-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.helpsupport-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.helpsupport-content h1 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 670px;
+    margin-right: 660px;
+    margin-bottom: 625px;
+}
+
+.help-backarrow-icon {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-right: 900px;
+    margin-bottom: 600px;
+}
+
+.helpsupport-box {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    width: 80%;
+    position: absolute;
+    padding: 20px;
+    margin-left: 165px;
+    margin-top: 270px;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.helpsupport-box h2 {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.helpsupport-box p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid black;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.helpsupport-box h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.phone-contacts {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    border-bottom: 2px solid black;
+}
+
+
+.helpsupport-box h4 {
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .helpsupport-container {
+        flex-direction: column;
+    }
+
+    .helpsupport-content {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .helpsupport-box {
+        padding: 15px;
+        max-width: 90%;
+        min-height: 150px;
+    }
+
+    .helpsupport-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .helpsupport-box h3,
+    .helpsupport-box h4 {
+        font-size: 0.9rem;
+    }
+
+    .help-backarrow-icon {
+        width: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .helpsupport-container {
+        flex-direction: column;
+    }
+
+    .helpsupport-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .helpsupport-box {
+        padding: 10px;
+        max-width: 100%;
+        min-height: 120px;
+    }
+
+    .helpsupport-box h2 {
+        font-size: 1rem;
+    }
+
+    .helpsupport-box h3,
+    .helpsupport-box h4 {
+        font-size: 0.8rem;
+    }
+
+    .help-backarrow-icon {
+        width: 20px;
+    }
+}

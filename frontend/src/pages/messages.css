@@ -1,0 +1,183 @@
+.messages-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: white;
+}
+
+
+.messages-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    height: 100vh;
+}
+
+.messages-content h1 {
+    margin-bottom: 620px;
+    margin-right: 850px;
+}
+
+.backarrow {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-bottom: 590px;
+    margin-right: 1040px;
+    cursor: pointer;
+}
+
+.content {
+    border: 1px solid black;
+    box-shadow: 0, 0, 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 100vh;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 130px;
+    width: 80%;
+    background-color: white;
+    gap: 20px;
+}
+
+.empty-box {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 450px;
+}
+
+
+.content h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.content p {
+    font-size: 1.7rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-message {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: green;
+    font-weight: bold;
+    font-size: 1rem;
+    animation: hologram 2s infinite ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.new-message:hover {
+    color: white;
+
+}
+
+@keyframes hologram {
+    0% {
+        background: linear-gradient(90deg, rgba(0, 255, 0, 0.5), rgba(255, 255, 255, 0.2));
+        background-size: 200% 200%;
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255,0 0.5);
+    }
+    50% {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(0, 255, 0, 0.8));
+        background-size: 200% 200%;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    }
+    100% {
+        background: linear-gradient(90deg, rgba(0, 255, 0, 0.8), rgba(255, 255, 255, 0.2));
+        background-size: 200% 200%;
+        transform: scale(1);
+        box-shadow: 0 0  10px rgba(0, 255, 0, 0.5);
+    }
+}
+
+@media (max-width: 768px) {
+    .messages-content {
+        padding: 15px;
+    }
+
+    .messages-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .backarrow {
+        width: 30px;
+        height: 30px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .empty-box {
+        width: 200px;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .messages-container {
+        padding: 10px;
+    }
+
+    .messages-content {
+        padding: 10px;
+    }
+
+    .messages-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .backarrow {
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .empty-box {
+        width: 150px;
+    }
+
+    .content h2 {
+        font-size: 1rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+}

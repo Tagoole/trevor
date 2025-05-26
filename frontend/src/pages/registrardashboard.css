@@ -1,0 +1,12 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.dashboard-container h1 {
+    font-weight: bold;
+    margin-right: 520px;
+    margin-top: 60px;
+}
